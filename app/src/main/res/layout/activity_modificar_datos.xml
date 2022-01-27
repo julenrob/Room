@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarDatos">
+
+    <TextView
+        android:id="@+id/tvSeleccion"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="269dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Nuevo Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeleccion" />
+
+    <EditText
+        android:id="@+id/etNewEmail"
+        android:layout_width="263dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:hint="Nuevo Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modifySelected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewName"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/btn_modifySelected"
+        android:layout_width="136dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="124dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelectedString"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/etNewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeleccion"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/btn_VolverDesdeModificar"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="120dp"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/btn_modifySelected" />
+</androidx.constraintlayout.widget.ConstraintLayout>
